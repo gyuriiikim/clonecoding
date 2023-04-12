@@ -1,0 +1,144 @@
+/* header-------------------------------------------------------------- */
+header {
+    background:rgba(0,0,0,0.6);
+    position:fixed; left:0; top:0; z-index:900;
+    width:100%; height:80px; display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:0 25px;
+    align-items:center;
+}
+header h1 {width:150px;}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {}
+header nav a {
+    margin-left:25px; color:#eee;
+}
+header nav a:first-child {margin-left:0;}
+header nav a:hover {color:#fff;}
+header .lnb {
+    color:#fff;
+}
+header .lnb:hover {color:#ff0;}
+header .lnb::after {
+    content:'\f138'; display:inline-block;
+    font-weight:600; color:#17a2b8;
+    margin-left:7px;
+}
+/* visual -------------------------------------------------------- */
+main {background:#f8f9fa; padding-bottom:5px;}
+main > * {margin-bottom:50px;}
+main .visual {
+    height:700px; overflow:hidden;
+    position:relative;
+}
+main .visual video {width:100%;}
+main .visual .ai {
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%, -50%);
+    width:700px;
+}
+main .visual .ai img {width: 100%;}
+/* board + gallery 합쳐서 정리*/
+main div a h1 {
+    font-size:1.8rem; font-weight:700; 
+    margin-bottom:20px; line-height:1.2;
+    letter-spacing:-0.02em;
+}
+/* board----------------------------------------------------------- */
+main .board {
+    width:1140px; margin:50px auto;
+    /* background:aqua;  */
+    justify-content:space-between;
+    display:flex; flex:row nowrap;
+}
+main .board a {
+    background:yellow;
+    width:32%; background:#fff; height:400px;
+    padding:20px;
+}
+main .board a .category {
+    margin-bottom:20px;
+}
+/* main .board a h1 {
+    font-size:1.8rem; font-weight:700; 
+    margin-bottom:20px; line-height:1.2;
+    letter-spacing:-0.02em;
+} */
+main .board a p {
+    font-size:1.2rem; letter-spacing:-0.02em;
+}
+main .board a .contents {line-height:1.5;}
+main .board a:nth-child(1) .contents {color:#888;}
+main .board a:nth-child(2) p:nth-child(3) {margin-bottom:20px;}
+main .board a:first-child .contents {
+    /*  여러줄 말줄임 처리 */
+    white-space:wrap;
+    overflow:hidden; text-overflow:ellipsis;
+    /* + */
+    -webkit-line-clamp:5;
+    -webkit-box-orient:vertical; /* -> 수직으로 간다 */
+    display:-webkit-box; /* --> display를 꼭 해줘야 한다 */
+}
+/* gallery ---------------------------------------------------------------------- */
+main .gallery {
+    width:1140px; margin:50px auto;
+    /* background:lime; */
+    justify-content:space-between;
+    display:flex; flex:row nowrap;
+}
+main .gallery a {
+    width:32%; background:#fff;
+    padding:20px;
+}
+main .gallery a p {
+    font-size:1.2rem; letter-spacing:-0.02em;
+}
+/* main .gallery a h1 {
+    font-size:1.8rem; font-weight:700; 
+    margin-bottom:20px; line-height:1.2;
+    letter-spacing:-0.02em;
+} */
+main .gallery a .category {
+    margin-bottom:20px; 
+}
+main .gallery a img {}
+main .gallery a .img img {width:100%; margin-bottom:20px;} 
+main .gallery a .contents {line-height:1.5; color:#888;}
+/* FOOTER --1140 높이x 여백으로------------------------------------ */
+footer {
+    border-top:1px solid #888;
+}
+footer .f_container {
+    width:1140px; margin:0 auto;
+    padding-top:40px; overflow:hidden;}
+footer .f_container .ft_top {
+    /* background:aqua; */
+    flex-flow:row nowrap; display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+footer .f_container .ft_top .f_t_left {margin-bottom:30px;}
+footer .f_container .ft_top .f_t_left a {
+    margin-right:16px; font-size:0.875rem;
+}
+footer .f_container .ft_top .f_t_left a:last-child {margin:0;}
+footer .f_container .ft_top .f_t_left a::after{
+    content:''; display:inline-block;
+    width:1px; height:10px; background-color:#333;
+    position:relative; right:-10px; top:-1px;
+}
+footer .f_container .ft_top .f_t_left a:last-child::after {display:none;}
+footer .f_container .ft_top .site {
+    padding:15px; background:#333; color:#fff; 
+    border-radius:10px;
+}
+footer .f_container .ft_btm {
+    margin-bottom:50px; line-height:1.5;
+}
+footer .f_container .ft_btm address {font-size:0.875rem;}
+footer .f_container .ft_btm address p {}
+footer .f_container .ft_btm > * {
+    line-height:1.5; color:#888;
+}

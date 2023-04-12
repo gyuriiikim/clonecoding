@@ -1,0 +1,63 @@
+/* 속성선택자 */
+/* input[type6^=pas] {background-color:aqua;} ^:시작 / $:끝나는 / *:포함하는 */
+/* input[name*=id] {background-color: coral;} */
+/* button[type$=ton] {background-color:yellow;} */
+/* #ccc, #ebf6ff, #f7fbff, #1f8ce6 / 제목내용: 12(0.75), 14(0.875), 16 */
+/* --------------------------------------------------------------------------- */
+html,body {background-color:#ebf6ff;}
+header {
+    /* background-color:yellow;  */
+    text-align:center;
+    border-bottom:1px solid #ccc; padding:15px 0;
+}
+header h1 {}
+header h1 a {
+    color: #1f8ce6; font-weight:600;
+    letter-spacing:-0.02em;
+}
+/* ---------------------------------------------------------------------- */
+main {
+    /* background-color:aqua; */
+    width:350px; margin:50px auto 0;
+}
+main #loginFrm {}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {
+    border:1px solid #ccc; overflow:hidden;
+    border-radius:10px;
+}
+main #loginFrm fieldset ul li {border-top:1px solid #ccc;}
+main #loginFrm fieldset ul li:first-child {border:0;}
+main #loginFrm fieldset ul li input[name$=id] {}
+main #loginFrm fieldset ul li input[name$=pw] {}
+main #loginFrm fieldset ul li input[name$=id],
+main #loginFrm fieldset ul li input[name$=pw] {
+    border:0; width:350px; height:50px; padding:15px; outline:none;
+}
+main #loginFrm fieldset ul li:nth-child(3) {
+    overflow:hidden; background-color:#f7fbff;
+    padding:10px;
+}
+main #loginFrm fieldset ul li label {float:left;}
+main #loginFrm fieldset ul li label input[value$=y] {}
+main #loginFrm fieldset ul li label span {font-size:0.75rem;}
+main #loginFrm fieldset ul li > span {float:right;}
+main #loginFrm fieldset ul li > span a {font-size:0.75rem;}
+main #loginFrm fieldset ul li > span a:first-child::after {
+    content:'|'; display:inline; padding-left:5px;
+}
+/* -------------------------------------------------- */
+main #loginFrm fieldset .btn {margin:15px 0 0;}
+main #loginFrm fieldset .btn button[type=button] {
+    background-color:#1f8ce6; color:#fff; margin-bottom:5px;
+}
+main #loginFrm fieldset .btn a {
+    background-color:#fff; color:#1f8ce6;
+    text-align:center; line-height:45px;
+}
+
+main #loginFrm fieldset .btn button[type=button],
+main #loginFrm fieldset .btn a {
+    display:block; width:350px; height:45px;
+    border-radius:10px;
+}

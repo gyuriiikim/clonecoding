@@ -1,0 +1,60 @@
+/* main & 공통배경 ---------------------------------------- */
+main {
+    /* background-color: yellow; */
+    width:850px; border: 2px solid gainsboro;
+    margin:0 auto;
+}
+/* 웹접근성개요---------------------------------------------- */
+main .top {
+    height:100px; border-bottom: 2px solid gainsboro;
+}
+main .top h1 {
+    float:left; font-size:1.25rem;
+    line-height:100px; margin-left:20px;
+}
+/* 현재페이지경로 -------------------------------------------*/
+main .top dl {}
+main .top dl dd {
+    float:right; font-size:0.875rem;
+    line-height:100px; margin-right:20px;
+}
+main .top dl dd span {}
+main .top dl dd span::before {
+    display:inline; content:'\f015';
+    padding-right:10px;
+}
+main .top dl dd em {}
+main .top dl dd em::before {
+    display:inline; content:'\f053';
+    margin:10px 10px; 
+}
+/* 웹접근성제목---------------------------------------------- */
+main section {
+    padding:100px 25px; overflow:hidden;
+    display:inline-block;
+    /* 배경이미지 속성 */
+    background-image:url(../images/bg.png);
+    background-size:50%; /*w h*/
+    background-repeat:no-repeat; /*기본repear*/
+    background-position:right -10px; /*x y*/
+}
+main section h2 {
+    font-size:1.063rem; margin-bottom:50px;
+    color:mediumblue; font-weight:700px;
+}
+main section h2 span::before {
+    display:inline; content:'\f138';
+    margin:10px 10px; 
+}
+/* 웹접근성 내용---------------------------------------------- */
+main section p {
+    line-height:1.5; margin-bottom:50px;
+}
+main section p em {
+    color:chartreuse; font-size:1.875rem;
+}
+main section h2+p {
+    font-size:1.875rem; margin-bottom:50px;
+}
+/* main section h2+p+p {margin-bottom:50px;}
+main section h2+p+p+p {margin-bottom:50px;} */

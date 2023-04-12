@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <div id="test">
+        <a href="#">1</a>
+        <a href="#">2</a>
+    </div>
+    <script>
+
+        const test_a = document.querySelectorAll('#test a')
+        for(let i in test_a){console.log(i)}
+        for(let i of test_a){console.log(i)}
+        test_a.forEach((target,i)=>{// value:첫번째 값이 들어간다.
+            console.log(target,i)
+            target.addEventListener('mouseover',()=>{
+                console.log(target) // 마우스 대상만 인식함
+            })
+        }) 
+        
+
+    </script>
+</body>
+</html>

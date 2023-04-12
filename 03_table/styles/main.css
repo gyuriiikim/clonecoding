@@ -1,0 +1,58 @@
+/* border------------------------------------------------------------ */
+table {
+    /*background-color: aqua;*/ width:1200px;
+    margin:50px 0; border-top:3px solid #333;
+}
+table thead {
+    background-color:#fafafa;
+}
+table thead tr {
+    border-bottom:1px dashed #999;
+}
+/* 제목--------------------------------------------------------------- */
+table thead tr th {
+    font-weight:700;
+    border-bottom-style:2px dashed #e5e5e5;
+    line-height:1.5; padding:30px 0;
+}
+/* 이미지는 의미가 없기 때문에 class를 따로 만드는 것보다 */
+/* table thead tr:first-child th:last-child {border-bottom:1px dashed #999;}
+table thead tr:first-child th:first-child {
+    background-image:url(../images/pay_table_02.png);
+    background-repeat:no-repeat;
+    background-position:center;
+} */
+table thead tr .img {
+    background-image:url(../images/pay_table_02.png);
+    background-repeat:no-repeat;
+    background-size:30%;
+    background-position:center;
+}
+table thead tr span {
+    color:dimgray 
+}
+/* 본문--------------------------------------------------------------- */
+table tbody {}
+table tbody tr {
+    border-bottom:2px dashed #999;
+}
+table tbody tr th {
+    line-height:5; letter-spacing:-0.02em;
+}
+/* 내용---------------------------------------------------------------- */
+table tbody tr td {
+    text-align:center;
+}
+table tbody tr span {
+    color:#ec018c; font-weight:800;
+}
+table tbody tr em {}
+
+/* 동시에 주는 디자인은 그룹 선택자를 잘 활용해야한다. */
+/* table tbody tr th em, table tbody tr th em span {font-weight:700;}*/
+/* #t tbody tr th, #t tbody tr td {
+    text-align:centet; padding:25px 0;
+    border-dottom:1px soild #e5e5e5;
+} */
+
+/* ------------------------------------------------------------------------ */

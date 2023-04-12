@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인웹접근성연구소</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <form action="#" method="get"> 
+            <fieldset>
+                <legend class="skip">검색양식</legend>
+                <input type="text" name="serch" placeholder="검색어입력">
+                <button type="submit" class="awesome"></button>
+        </fieldset>
+        </form>
+    </header>
+    <main>
+        <aside>
+            <h2>회원관련</h2>
+            <div class="menu">
+                <a href="#">회원가입</a>
+                <a href="#" class="active">로그인</a>
+                <a href="#">ID/PW 찾기</a>
+            </div>
+        </aside>
+        <div class="container">
+            <div class="title_path">
+                <h1>로그인</h1>
+                <dl>
+                    <dt class="skip">현재 페이지 경로</dt>
+                    <dd><i class="fa-solid fa-house"></i><span><i class="fa-solid fa-chevron-left">회원관련</i></span><i class="fa-solid fa-chevron-left">로그인</i></dd>
+                </dl>
+            </div>
+            <div class="contents">
+                <div class="login_box">
+                    <h2>Member <span>Login</span></h2>
+                    <p>비회원이시 분은 아래 회원가입을 이용 바랍니다.</p>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="skip">로그인양식</legend>
+                            <ul class="left">
+                                <li>
+                                    <span>아이디</span>
+                                    <input type="text" name="user_id">
+                                <li>
+                                    <span>비밀번호</span>
+                                    <input type="text" name="user_pw">
+                                </li>
+                            </ul>
+                            <p><button type="button">로그인</button></p>
+                        </fieldset>
+                    </form>
+                    <div class="join_search">
+                        <a href="#">회원가입하기</a>
+                        <a href="#">아이디, 비밀번호찾기</a>
+                    </div>
+                </div>
+                <a href="#" class="top_link"><i class="fa-solid fa-chevron-up"></i></a>
+                <div class="bottom_text">
+                    <p>웹의 힘은 그것의 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.</p>
+                    <p>(The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.)</p>
+                    <p><em>팀 버너스 리 경 - 웹의 창시자 (Tim Berners - Lee , W3C Director and inventor of the World Wide Web)</em></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

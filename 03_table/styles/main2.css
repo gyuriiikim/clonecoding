@@ -1,0 +1,32 @@
+lines (28 sloc)  979 Bytes
+/* 15=0.938rem, 13=0.813rem, 20=1.250rem */
+/* #e5e5e5 #333 #ec018c #d2d2d2 #c286ff #f5f5f5 */
+#t2 {
+    width:1200px; margin:50px auto 0;
+    border-top:3px solid #333;
+}
+#t2 thead {}
+#t2 thead tr {}
+#t2 thead tr th {padding:30px 0; background-color:#f5f5f5;}
+#t2 thead tr th span {font-size:0.813rem;}
+#t2 tbody {}
+#t2 tbody tr {}
+#t2 tbody tr th, #t2 tbody tr td {padding:30px 0;}
+#t2 tbody tr th {}
+#t2 tbody tr th:first-child {font-weight:700;}
+#t2 tbody tr th:nth-child(2) {text-align:left;}
+#t2 tbody tr th span {
+    background-color:#c286ff; color:#fff;
+    border-radius:8px; padding:3px;
+    display:inline-block;
+}
+#t2 tbody tr th em {font-size:1.25rem;}
+#t2 tbody tr td {}
+#t2 tbody tr td span {font-size:0.813rem;}
+#t2 tbody tr td em {color:#ec018c; font-weight:700;}
+#t2 tbody tr td a {border-radius:10px; padding:7px 5px;}
+#t2 tbody tr td .join {border:1px solid #d2d2d2;}
+#t2 tbody tr td .select {background-color:#c286ff; color:#fff;}
+/* #t2 tbody tr td {text-align:cemtet;}
+    #t2 tbody tr td:first-of-type {width:150px;}
+*/
