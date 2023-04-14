@@ -1,0 +1,92 @@
+body, html {
+  height: 300vh;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 200%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #fff;
+  left: -50%;
+  z-index: -1;
+}
+
+header {
+  background: lightcoral;
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+}
+header nav {
+  height: 100px;
+}
+header nav > .gnb {
+  background: lightgoldenrodyellow;
+  display: flex;
+}
+header nav > .gnb > li {
+  position: relative;
+  display: flex;
+}
+header nav > .gnb > li > a {
+  background: lightgray;
+  width: 200px;
+  line-height: 100px;
+}
+header nav > .gnb > li .sub {
+  background: lightgreen;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+}
+header nav > .gnb > li .sub li a {
+  display: block;
+  padding: 15px;
+}
+
+main {
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background: url(../images/posco/s01_bg.jpg) center;
+  background-size: cover;
+}
+main h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0em;
+  font-size: 3rem;
+  line-height: 1.2;
+  position: absolute;
+  transform: translate(-10%, -10%);
+  top: 40%;
+  left: 40%;
+}
+
+main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 990;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #0d278d, transparent, #0f6e38);
+}/*# sourceMappingURL=posco.css.map */

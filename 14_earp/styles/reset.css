@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 *{box-sizing:border-box;}
 html, body,h1,h2,h3,h4,h5,h6,
 p,ul,ol,li,blockquote,dl,dt,dd,address,video,
@@ -7,7 +7,7 @@ table, tr,th,td,thead,tbody,tfoot,
 form,fieldset,legend,input,label,textarea,option,select,button,
 header,main,footer,article,section,aside,nav,figure,figcaption,
 div,span {
-    font-family:'Nanum Gothic', "Font Awesome 5 Free", "Font Awesome 5 Brands",sans-serif;
+    font-family:'Noto Sons KR', "Font Awesome 5 Free", "Font Awesome 5 Brands",sans-serif;
     margin:0; padding:0;
     font-size:1.0rem;
     font-weight:normal;

@@ -1,0 +1,62 @@
+$width14:1400px;
+$color1:#0f6e38;
+$color2:#0d278d;
+$color3:#fff;
+$color4:#000;
+$color5:#555;
+@mixin layout {width:1400px; margin:0 auto;}
+// .sub {display:none;}
+body, html {height:300vh;}
+header::after {
+    content:''; display:block; width:200%;
+    position:absolute; top:0; height:100%;
+    background:$color3; left:-50%; z-index:-1;
+}
+header {
+    background:lightcoral;
+    @include layout;
+    display:flex; justify-content:space-between; z-index:999;
+    align-items:center; height:100px; position:fixed; top:0; left:50%;
+    transform:translateX(-50%); align-items:center;
+    h1 {
+        a {img {}}
+    }
+    nav {
+        height:100px;
+        > .gnb {
+            background:lightgoldenrodyellow;
+            display:flex;
+            > li {
+                position:relative; display:flex;
+                > a {background:lightgray; width:200px; line-height:100px;}
+                .sub {
+                    background:lightgreen; 
+                    height:300px; position:absolute; top:100px; width:100%;
+                    li {
+                        a {display:block; padding:15px;}
+                    }
+                }
+            }
+        }
+    }//e:nav
+} //e:header
+main {
+    // background:url(../images/posco/s01_bg.jpg);
+    background-repeat:no-repeat; height:100vh; width:100%; 
+    background-position:center; position:relative;
+    background:url(../images/posco/s01_bg.jpg) center;
+    background-size:cover;
+    
+    h1 {
+        color:$color3; text-align:center; font-weight:700;
+        letter-spacing:0em;
+        font-size:3rem; line-height:1.2; position:absolute;
+        transform:translate(-10%, -10%); top:40%; left:40%;
+    }
+}//e:main
+main::after {
+    content:''; display:block;
+    position:absolute; left:0; top:0; z-index:990;
+    width:100%;height:100vh;
+    background:linear-gradient(90deg,$color2, transparent ,$color1);
+}
