@@ -32,29 +32,38 @@ header {
 header nav {
   height: 100px;
 }
-header nav > .gnb {
+header nav .gnb {
   background: lightgoldenrodyellow;
   display: flex;
 }
-header nav > .gnb > li {
+header nav .gnb > li {
   position: relative;
   display: flex;
 }
-header nav > .gnb > li > a {
+header nav .gnb > li > a {
   background: lightgray;
   width: 200px;
   line-height: 100px;
 }
-header nav > .gnb > li .sub {
-  background: lightgreen;
+header nav .gnb > li .sub {
+  background: #fff;
   height: 300px;
   position: absolute;
   top: 100px;
   width: 100%;
 }
-header nav > .gnb > li .sub li a {
+header nav .gnb > li .sub li a {
   display: block;
   padding: 15px;
+}
+header nav .bg {
+  background: lightgreen;
+  height: 300px;
+  width: 400%;
+  position: absolute;
+  z-index: -5;
+  left: 0;
+  top: 100px;
 }
 
 main {

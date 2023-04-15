@@ -23,20 +23,32 @@ header {
     }
     nav {
         height:100px;
-        > .gnb {
+        .gnb {
             background:lightgoldenrodyellow;
             display:flex;
             > li {
                 position:relative; display:flex;
                 > a {background:lightgray; width:200px; line-height:100px;}
                 .sub {
-                    background:lightgreen; 
+                    background:$color3; 
                     height:300px; position:absolute; top:100px; width:100%;
                     li {
                         a {display:block; padding:15px;}
                     }
                 }
+                // 서브 배경 만드는 방법1.
+                // js 설정 시 display 기능 사능, height 애니메이션X
+                // .sub::before {
+                //     content:''; display:block; width:300%;
+                //     position:absolute; top:0; height:100%;
+                //     background:$color3; left:-500%; z-index:-1;
+                // }
             }
+        }
+        .bg {
+            background:lightgreen; 
+            height:300px; width:400%; position:absolute;
+            z-index:-5; left:0; top:100px;
         }
     }//e:nav
 } //e:header
